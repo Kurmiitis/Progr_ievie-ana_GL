@@ -4,7 +4,7 @@ public class product{
     private String name;
     private double price;
     private int count;
-}
+
 
 public product(String product_id, String name, double price, in count){
     this.product_id=product_id;
@@ -94,4 +94,27 @@ public static class Perishable extends product{
     public String get_prod_info() {//perishable product info
         return (super.get_prod_info() + ", Expiry Date: " + get_exp_date());
     }
+}
+
+public static class NonPerishable extends product {	//non perishable product start
+    private String warranty;
+
+    public NonPerishable(String product_id, String name, double price, int count, String warranty) {
+        super(product_id, name, price, count);
+        this.warranty = warranty;
+    }
+
+    public String get_warranty() {//warranty getter
+        return warranty;
+    }
+
+    public void set_warranty(String warranty) {//warranty setter
+        this.warranty = warranty;
+    }
+
+        
+    public String get_prod_info() {//get info about non perishable
+        return super.get_prod_info() + ", Warranty Period: " + get_warranty();
+    }
+}
 }
