@@ -53,7 +53,13 @@ public class shelf {
         System.out.println("Perishable product added successfully!");
 }
 
+private static void add_non_perishable() { // add non perishable start
+    	
+        System.out.println("Enter product ID:");//nonp prod name
+        String product_id = scanner.nextLine();
 
+        System.out.println("Enter product name:");//nonp prod name
+        String name = scanner.nextLine();
 
 
 
