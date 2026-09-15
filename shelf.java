@@ -65,6 +65,7 @@ private static void add_non_perishable() { // add non perishable start
         while(true){
             System.out.println("Enter product price");
             try{
+                price = scanner.nextDouble();
                 if(price>=0){
                     break;
                 }else{
@@ -73,7 +74,7 @@ private static void add_non_perishable() { // add non perishable start
             }catch (InputMismatchException e) {
                 System.out.println("!!Error: Please enter a valid number!!");
                 scanner.nextLine();
-        }
+}
     }
 
     int count=0;
