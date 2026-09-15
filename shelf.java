@@ -28,5 +28,30 @@ public class shelf {
                 scanner.nextLine(); 
             }
         }
+
+    int count = 0; // qty scanner with exception start
+        while (true) {
+            System.out.println("Enter product quantity:");
+            try {
+                count = scanner.nextInt();
+                if (count >= 0) { 
+                    break;
+                } else {
+                    System.out.println("!!Error: Quantity cannot be negative. Please try again!!");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("!!Error: Please enter a valid number!!");
+                scanner.nextLine(); 
+            }
+        }
+        scanner.nextLine();
 }
+
+
+
+
+
+
+
+
 }
