@@ -166,6 +166,12 @@ public void select(){
                 display();
             case 4:
                 restock();
+            case 5:
+                System.out.println("Exiting...");
+                return;
+            default:
+                System.out.println("Invalid option. Please try again.");
+                break;
         }
     }
 }
