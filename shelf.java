@@ -95,7 +95,9 @@ private static void add_non_perishable() { // add non perishable start
 
     System.out.println("Enter product warranty:");//nonp prod warranty
     String warranty = scanner.nextLine();
-    
+
+    current_prod = new product.NonPerishable(product_id, name, price, count, warranty);//nonp prod get info
+    System.out.println("Non-perishable product added successfully!");
 }
 
 
