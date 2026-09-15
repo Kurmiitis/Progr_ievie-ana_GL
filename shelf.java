@@ -164,7 +164,8 @@ public void select(){
                 add_non_perishable();
             case 3:
                 display();
-            
+            case 4:
+                restock();
         }
     }
 }
