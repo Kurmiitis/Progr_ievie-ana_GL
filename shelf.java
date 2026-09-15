@@ -140,5 +140,25 @@ private static void restock(){
 }
 }
 
+public void select(){
+    while(true){
+        System.out.println("=============================");
+        System.out.println("Supermarket inventory system:");
+        System.out.println("1. Add perishable product");
+        System.out.println("2. Add non-perishable product");
+        System.out.println("3. Display product info");
+        System.out.println("4. Restock product");
+        System.out.println("5. Exit");
+        System.out.println("=============================");
+
+        System.out.println(" ");
+        System.out.println("Select an option:");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+
+        
+    }
+}
 
 }
