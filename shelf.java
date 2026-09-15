@@ -160,12 +160,16 @@ public void select(){
         switch(choice){
             case 1:
                 add_perishable();
+                break;
             case 2:
                 add_non_perishable();
+                break;
             case 3:
                 display();
+                break;
             case 4:
                 restock();
+                break;
             case 5:
                 System.out.println("Exiting...");
                 return;
@@ -175,5 +179,7 @@ public void select(){
         }
     }
 }
-
+    public static void main(String[] args) {
+        select();
+    }
 }
