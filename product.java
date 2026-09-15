@@ -12,3 +12,7 @@ public product(String product_id, String name, double price, in count){
     set_price(price);
     set_count(count);
 }
+
+public String get_prod_id(){
+    return product_id;
+}
