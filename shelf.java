@@ -110,12 +110,29 @@ private static void display(){
             System.out.println("No product to display!");
             System.out.println("----------------------");
     }
+}
+
+private static void restock(){
+    if(current_prod !=null){
+        int added_count=0;
+        while(true){
+            System.out.println("Enter quantity to add: ");
+            try{
+                added_count=scanner.nextInt();
+                if(added_count>=0){
+                    break;
+                }else{
+                    System.out.println("!!Error: Restock amount cannot be negative. Please try again!!");
+                }
+            }catch (InputMismatchException e) {
+                    System.out.println("!!Error: Please enter a valid number!!");
+                    scanner.nextLine();
+        }
+    }
 
 }
 
-
-
-
+}
 
 
 
