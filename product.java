@@ -16,3 +16,7 @@ public product(String product_id, String name, double price, in count){
 public String get_prod_id(){
     return product_id;
 }
+
+public void set_prod_id(String product_id){
+    this.product_id=product_id;
+}
