@@ -61,6 +61,27 @@ private static void add_non_perishable() { // add non perishable start
         System.out.println("Enter product name:");//nonp prod name
         String name = scanner.nextLine();
 
+        double price=0.0;
+        while(true){
+            System.out.println("Enter product price");
+            try{
+                if(price>=0){
+                    break;
+                }else{
+                    System.out.println("!!Error: Price cannot be negative. Please try again!!");
+                }
+            }catch (InputMismatchException e) {
+                System.out.println("!!Error: Please enter a valid number!!");
+                scanner.nextLine();
+        }
+    }
+
+    
+}
+
+
+
+
 
 
 
