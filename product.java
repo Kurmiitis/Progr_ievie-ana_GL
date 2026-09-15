@@ -73,3 +73,25 @@ public String get_info(){
     ", Price: " + get_price() +
     ", Quantity: " + get_count();
 }
+
+
+public static class Perishable extends product{
+    private String exp_date;
+
+    public Perishable(String product_id, String name, double price, int count, String exp_date){
+        super(product_id, name, price, count);
+        this.exp_date=exp_date;
+    }
+
+    public String get_exp_date() {//exp date getter
+        return exp_date;
+    }
+
+    public void set_exp_date(String exp_date) {//exp date setter
+        this.exp_date = exp_date;
+    }
+
+    public String get_prod_info() {//perishable product info
+        return (super.get_prod_info() + ", Expiry Date: " + get_exp_date());
+    }
+}
