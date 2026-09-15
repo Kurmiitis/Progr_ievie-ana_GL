@@ -5,3 +5,10 @@ public class product{
     private double price;
     private int count;
 }
+
+public product(String product_id, String name, double price, in count){
+    this.product_id=product_id;
+    this.name=name;
+    set_price(price);
+    set_count(count);
+}
