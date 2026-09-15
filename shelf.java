@@ -129,11 +129,16 @@ private static void restock(){
                     scanner.nextLine();
         }
     }
-
+    scanner.nextLine();
+    current_prod.restock(added_count);
+    System.out.println("Product restocked successfully!");
+}else{
+    System.out.println(" ");
+    System.out.println("----------------------");
+    System.out.println("No product to restock!");
+    System.out.println("----------------------");
 }
-
 }
-
 
 
 }
