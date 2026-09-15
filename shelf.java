@@ -162,6 +162,9 @@ public void select(){
                 add_perishable();
             case 2:
                 add_non_perishable();
+            case 3:
+                display();
+            
         }
     }
 }
