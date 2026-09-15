@@ -56,3 +56,14 @@ public void set_count(int count){
         System.out.println("!!ERROR: Product count cannot be negative!!");
     }
 }
+
+
+public void restock(int added_count){
+    if(added_count>=0){
+        this.count=count;
+    }else{
+        System.out.println("!!Error: Added stock cannot be negative!!");
+    }
+}
+
+
