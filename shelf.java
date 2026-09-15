@@ -92,6 +92,10 @@ private static void add_non_perishable() { // add non perishable start
             }
     }
     scanner.nextLine();
+
+    System.out.println("Enter product warranty:");//nonp prod warranty
+    String warranty = scanner.nextLine();
+    
 }
 
 
