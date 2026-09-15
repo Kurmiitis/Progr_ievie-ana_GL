@@ -32,3 +32,14 @@ public void set_name(String name){
 }
 
 
+public double get_price(){
+    return price;
+}
+
+public void set_price(double price){
+    if(price>=0){
+        this.price=price;
+    }else{
+        System.out.println("!!ERROR: Product price cannot be negative!!");
+    }
+}
