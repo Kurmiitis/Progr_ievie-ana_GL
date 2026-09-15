@@ -60,14 +60,14 @@ public void set_count(int count){
 
 public void restock(int added_count){
     if(added_count>=0){
-        this.count=count;
+        this.count+=added_count;
     }else{
         System.out.println("!!Error: Added stock cannot be negative!!");
     }
 }
 
 
-public String get_info(){
+public String get_prod_info(){
     return "Product ID: " + get_prod_id() +
     ", Name: " + get_name() +
     ", Price: " + get_price() +
