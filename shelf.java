@@ -45,6 +45,12 @@ public class shelf {
             }
         }
         scanner.nextLine();
+
+    System.out.println("Enter product expiry date (YYYY-MM-DD):");//prod exp date
+        String exp_date = scanner.nextLine();
+
+        current_prod = new product.Perishable(product_id, name, price, count, exp_date);//perish prod get info
+        System.out.println("Perishable product added successfully!");
 }
 
 
