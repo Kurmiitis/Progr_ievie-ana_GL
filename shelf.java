@@ -100,7 +100,13 @@ private static void add_non_perishable() { // add non perishable start
     System.out.println("Non-perishable product added successfully!");
 }
 
+private static void display(){
+    if(current_prod !=null){
+        System.out.println("Product information:");
+        System.out.println(current_prod.get_prod_info());
+    }
 
+}
 
 
 
