@@ -160,6 +160,8 @@ public void select(){
         switch(choice){
             case 1:
                 add_perishable();
+            case 2:
+                add_non_perishable();
         }
     }
 }
