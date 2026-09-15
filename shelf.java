@@ -104,6 +104,11 @@ private static void display(){
     if(current_prod !=null){
         System.out.println("Product information:");
         System.out.println(current_prod.get_prod_info());
+    }else{
+        System.out.println(" ");
+            System.out.println("----------------------");
+            System.out.println("No product to display!");
+            System.out.println("----------------------");
     }
 
 }
