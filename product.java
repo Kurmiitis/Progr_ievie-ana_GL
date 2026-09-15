@@ -43,3 +43,16 @@ public void set_price(double price){
         System.out.println("!!ERROR: Product price cannot be negative!!");
     }
 }
+
+
+public int get_count(){
+    return count;
+}
+
+public void set_count(int count){
+    if(count>=0){
+        this.count=count;
+    }else{
+        System.out.println("!!ERROR: Product count cannot be negative!!");
+    }
+}
