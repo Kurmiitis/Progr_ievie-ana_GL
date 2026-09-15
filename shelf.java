@@ -141,7 +141,7 @@ private static void restock(){
 }
 }
 
-public void select(){
+public static void select(){
     while(true){
         System.out.println("=============================");
         System.out.println("Supermarket inventory system:");
