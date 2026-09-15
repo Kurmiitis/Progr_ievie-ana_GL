@@ -67,3 +67,9 @@ public void restock(int added_count){
 }
 
 
+public String get_info(){
+    return "Product ID: " + get_prod_id() +
+    ", Name: " + get_name() +
+    ", Price: " + get_price() +
+    ", Quantity: " + get_count();
+}
