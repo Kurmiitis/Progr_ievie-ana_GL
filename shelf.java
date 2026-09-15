@@ -157,7 +157,10 @@ public void select(){
         scanner.nextLine();
 
 
-        
+        switch(choice){
+            case 1:
+                add_perishable();
+        }
     }
 }
 
