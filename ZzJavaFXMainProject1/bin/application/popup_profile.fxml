@@ -1,0 +1,9 @@
+<AnchorPane prefWidth="300" prefHeight="200" style="-fx-background-color: #1e1e2d;">
+    <Label text="Profile Updated!" style="-fx-text-fill: white; -fx-font-size: 16pt;" 
+           AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20"/>
+    <Label text="3 new achievements unlocked!" style="-fx-text-fill: #a0a0c0;" 
+           AnchorPane.topAnchor="50" AnchorPane.leftAnchor="20"/>
+    <Button text="Got It" onAction="#closePopup" 
+            style="-fx-background-color: #3a3a4d; -fx-text-fill: white;"
+            AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20"/>
+</AnchorPane>

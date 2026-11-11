@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.A3">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="467.0" stroke="BLACK" strokeType="INSIDE" width="742.0" />
+      <ImageView fx:id="bg3" fitHeight="516.0" fitWidth="917.0" layoutX="-42.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dota_wallpaper15_hu10349076919476048798.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_exit" layoutX="683.0" layoutY="427.0" mnemonicParsing="false" text="Close" />
+      <ListView fx:id="lst" layoutX="33.0" layoutY="50.0" prefHeight="302.0" prefWidth="280.0" />
+      <Label layoutX="302.0" layoutY="8.0" text="Make your item build" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_item_list" layoutX="500.0" layoutY="50.0" prefHeight="302.0" prefWidth="234.0" />
+      <CheckBox fx:id="chk1" layoutX="52.0" layoutY="368.0" mnemonicParsing="false" text="Damage Item" textFill="WHITE" />
+      <CheckBox fx:id="chk2" layoutX="52.0" layoutY="400.0" mnemonicParsing="false" text="Survivability Item" textFill="WHITE" />
+      <CheckBox fx:id="chk3" layoutX="192.0" layoutY="368.0" mnemonicParsing="false" text="Utility Item" textFill="WHITE" />
+      <CheckBox fx:id="chk4" layoutX="192.0" layoutY="400.0" mnemonicParsing="false" text="Consumable" textFill="WHITE" />
+      <TextField fx:id="txt_select" layoutX="330.0" layoutY="268.0" promptText="Search an item" />
+      <Label layoutX="387.0" layoutY="234.0" text="Item" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_select" layoutX="380.0" layoutY="311.0" mnemonicParsing="false" text="Select" />
+      <Label layoutX="578.0" layoutY="27.0" text="Your build" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="24.0" text="Item List" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
